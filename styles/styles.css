@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "Kanit";
+    src: url(../Practica2/assets/fonts/Kanit/Kanit-Black.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: "Kanit"; 
+}
+body{
+    background-image: linear-gradient(to right top, #24323d, #1a5466, #007a86, #00a098, #1ec79a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.inventory::-webkit-scrollbar{
+    width: 10px;
+
+}
+.inventory::-webkit-scrollbar-thumb{
+    background: #1ec79a;
+    border-radius: 50px;
+}
+.inventory::-webkit-scrollbar-thumb:hover{
+    background: #083e30;
+    border-radius: 50px;
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row; 
+    
+}
+.card{
+    min-width: 350px;
+    min-height: 350px;
+    flex-direction: column;
+    background: #24323d;
+    color: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.1);
+    transition: all 0.2s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    scroll-snap-align: start;
+}
+.card:hover{
+    flex: 2;
+    background-image: linear-gradient(to right top, #24323d, #1a5466, #007a86, #00a098, #1ec79a);
+}
+.formulario h1{
+    font-size: 28px;
+    color: #1ab188;
+    font-weight: 500;
+    text-align: center;
+}
+.formulario{
+    background-color: #24323d;
+    width: 350px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    gap: 5px;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 40px;
+    height: 580px;
+    margin-bottom: 10px;
+    
+
+}
+.formulario label {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0,3px;
+    color: white;
+}
+input{
+    background-color: white;
+    border: none;
+    margin : 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    outline:none;
+    border-radius: 20px;
+    text-align: center;
+}
+input:hover{
+    background-color: #ece9e9;
+    transform: scale(1.1);
+}
+
+.inventory{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+    overflow-y: scroll;
+    height: 645px;
+}
+button{
+    border:none;
+    outline:none;
+    background: #1ab188;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    transform: 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+button:hover{
+    background: #1ec79a;
+    transform: 0.3s;
+    transform: scale(1.1);
+}
+

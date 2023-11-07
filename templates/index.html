@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de inventario</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <div class="container">
+    <div class="formulario">
+        <h1>Agregar productos: </h1>
+        <label for="name">Nombre:</label>
+        <input type="text" id="nameAñadir">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad">
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio">
+        <button type="button" id="añadir">Añadir</button>
+        <button id="btnConfirmar" style="display: none;">Confirmar</button>
+        <button type="button" id="añaddir">Inventario total</button>
+        <span id="mensaje" style="display: none;"></span>
+        <h1>Buscar productos: </h1>
+        <label for="name">Nombre:</label>
+        <input type="text" id="nameBuscar">
+        <button type="button" id="botonBuscar">Buscar</button>
+        
+    </div>
+    <div id="inventory" class="inventory"></div>
+    </div>
+    
+        
+    </div>
+    <script src="../script/todos.js"></script>
+</body>
+</html>

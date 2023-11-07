@@ -1,2 +1,2 @@
-//Autor: Tristán Marin Lopez (Estudiante)
-//GitHub
+Autor: Tristán Marin Lopez (Estudiante)
+GitHub: https://github.com/trisml/GestorInventario.git
